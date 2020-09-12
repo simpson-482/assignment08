@@ -70,6 +70,6 @@ var writeResult = fs.writeFileSync(path.join(__dirname, 'README.md'), myResult)
 console.log("README.md file generated....")
 
 }
-
+  
 
 start();
