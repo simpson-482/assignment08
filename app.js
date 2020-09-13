@@ -14,18 +14,18 @@ async function start() {
         },
         {
             type: "input",
-            message: "What is your id?",
+            message: "What is your Role",
+            name: "getRole"
+        },
+        {
+            type: "input",
+            message: "What is your Id?",
             name: "getId"
         },
         {
             type: "input",
-            message: "What is your email address?",
-            name: "getEmail"
-        },
-        {
-            type: "input",
-            message: "What is your office number?",
-            name: "officeNumber"
+            message: "What is your School?",
+            name: "getSchool"
         },
         {
             type: "input",
@@ -34,8 +34,8 @@ async function start() {
         },
         {
             type: "input",
-            message: "What is your school?",
-            name: "getSchool"
+            message: "What is your office number?",
+            name: "getOfficeNumber"
         },
         ]);
 
@@ -46,7 +46,7 @@ async function start() {
 
         const myUserName = userResponse.getName;
         const myId = userResponse.getId;
-        const myEmail = userResponse.getEmail;
+        const myRole = userResponse.getRole;
         const myOfficeNumber = userResponse.officeNumber;
         const myGitHub = userResponse.getGithub;
         const mySchool = userResponse.getSchool;
@@ -56,8 +56,8 @@ async function start() {
 ${myUserName}
 ## Employee Id
 ${myId}
-## Email address 
-${myEmail}
+## Employee Role
+${myRole}
 ## Office Number
 ${myOfficeNumber}
 ## GitHub Username 
